@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./calculator.css">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <main>
+        <div class="calculator componentSpacing">
+            <div class="calculatorContainer screenSize">
+                <div class="calculatorBody grid-1">
+                    <div class="calculatorBlock dflex-col">
+                        <div class="calculatorBox">
+                            <div class="displayBox">
+                                <input id="display" readonly>
+                                <input id="answer" readonly>
+                            </div>
+                            <div class="keysBox keys-grid-4">
+                                <button class="buttonColor" onclick="clearDisplay()">
+                                    <i class="fa-solid fa-c "></i>
+                                </button>
+                                <button class="buttonColor" onclick="backSpace()">
+                                    <i class="fa-solid fa-delete-left"></i>
+                                </button>
+                                <button class="buttonColor" onclick="appendToDisplay('%')">
+                                    <i class="fa-solid fa-percent"></i>
+                                </button>
+                                <button  class="buttonColor" onclick="appendToDisplay('/')">
+                                    <i class="fa-solid fa-divide"></i>
+                                </button>
+                                <button onclick="appendToDisplay('7')">
+                                    <i class="fa-solid fa-7"></i>
+                                </button>
+                                <button onclick="appendToDisplay('8')">
+                                    <i class="fa-solid fa-8"></i>
+                                </button>
+                                <button onclick="appendToDisplay('9')">
+                                    <i class="fa-solid fa-9"></i>
+                                </button>
+                                <button class="buttonColor" onclick="appendToDisplay('*')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                                <button onclick="appendToDisplay('4')">
+                                    <i class="fa-solid fa-4"></i>
+                                </button>
+                                <button onclick="appendToDisplay('5')">
+                                    <i class="fa-solid fa-5"></i>
+                                </button>
+                                <button onclick="appendToDisplay('6')">
+                                    <i class="fa-solid fa-6"></i>
+                                </button>
+                                <button class="buttonColor" onclick="appendToDisplay('-')">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <button onclick="appendToDisplay('1')">
+                                    <i class="fa-solid fa-1"></i>
+                                </button>
+                                <button onclick="appendToDisplay('2')">
+                                    <i class="fa-solid fa-2"></i>
+                                </button>
+                                <button onclick="appendToDisplay('3')">
+                                    <i class="fa-solid fa-3"></i>
+                                </button>
+                                <button class="buttonColor" onclick="appendToDisplay('+')">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <button onclick="appendToDisplay('00')">
+                                    <i class="fa-solid fa-0"></i><i class="fa-solid fa-0"></i>
+                                </button>
+                                <button onclick="appendToDisplay('0')">
+                                    <i class="fa-solid fa-0"></i>
+                                </button>
+                                <button onclick="toAddDecimal('.')">.</button>
+                                <button class="buttonColor" onclick="calculate()">
+                                    <i class="fa-solid fa-equals"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

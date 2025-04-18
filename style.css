@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:var(--primaryColor);
+    font-family: "EB Garamond", serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+h1 {
+    text-wrap: balance;
+    font-family: var(--ffprimary);
+    color: var(--lightColor);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-family: var(--ffprimary);
+    color: var(--tertiaryColor);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+}
+
+input,
+textarea {
+    font-family: inherit;
+    font-family: var(--ffsecondary);
+    color: var(--darkColor);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    border-radius: 0.75rem;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+
+
+:root {
+    --primaryColor: #faf2e8;
+    --secondaryColor: #525151;
+    --tertiaryColor: #aa2447;
+    --darkColor: #000000;
+    --lightColor: #ffffff;
+    --regularFont: 1.6rem;
+    --headingFont: 4rem;
+    --ffPrimary: "EB Garamond", serif;
+    --ffSecondary: "Montserrat", sans-serif;
+    --border: 1px solid var(--tertiaryColor);
+    --borderRadius: 0.5rem;
+}
+
+
+.componentSpacing {
+    padding: 3rem 0rem;
+    /* Breathing Space Between Components */
+}
+
+.screenSize {
+    max-width: 500px;
+    /* Device Screen Size */
+    margin: auto;
+    /* Left and right Center */
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+.keys-grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding:1rem;
+}
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0rem 2rem;
+}
+
+.dflex {
+    display: flex;
+    /* without this wont work */
+    align-items: center;
+    /* top & bottom Alignment */
+    justify-content: center;
+    /* left & right Alignment */
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    /* makes top to bottom align */
+    align-items: center;
+    /* Behaves like a justify-content */
+    justify-content: center;
+    /* Behaves like a align-items */
+    text-align: center;
+}
+
+main {
+    /* background-color: #ffbf00; */
+    width: 100%;
+    height: auto;
+}
+
+/* @media (width <=576px) */
+@media (max-width: 360px) {
+    .grid-1,
+    .grid-5 {
+      grid-template-columns: 1fr;
+      padding: 0rem 1rem;
+    }
+  }
+

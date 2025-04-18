@@ -1,0 +1,80 @@
+.calculatorBox {
+    background-color: var(--darkColor);
+    font-family: var(--ffprimary);
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+.displayBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#display {
+    background-color: #3e3e3e;
+    width: 100%;
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    color: var(--lightColor);
+}
+
+#answer {
+    background-color: #3e3e3e;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: right;
+    border: none;
+    color: var(--lightColor);
+}
+
+button {
+    background-color: var(--secondaryColor);
+    color: var(--lightColor);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 2.5rem;
+    border: none;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #686666;
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    background-color: #ccc7c7;
+}
+
+.buttonColor {
+    background-color: var(--tertiaryColor);
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+
+}
+
+.buttonColor:hover {
+    background-color: #bc3559;
+    color: var(--lightColor);
+    transition: background-color 0.3s ease;
+}
+
+.buttonColor:active {
+    background-color: #f4688e;
+    color: var(--lightColor);
+}
