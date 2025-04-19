@@ -94,7 +94,7 @@ textarea {
 }
 
 .screenSize {
-    max-width: 500px;
+    max-width: 300px;
     /* Device Screen Size */
     margin: auto;
     /* Left and right Center */

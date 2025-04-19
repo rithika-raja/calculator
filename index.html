@@ -22,8 +22,8 @@
                     <div class="calculatorBlock dflex-col">
                         <div class="calculatorBox">
                             <div class="displayBox">
-                                <input id="display" readonly>
-                                <input id="answer" readonly>
+                                <input id="display" placeholder="0" readonly>
+                                <input id="answer" placeholder="0" readonly>
                             </div>
                             <div class="keysBox keys-grid-4">
                                 <button class="buttonColor" onclick="clearDisplay()">
@@ -32,10 +32,10 @@
                                 <button class="buttonColor" onclick="backSpace()">
                                     <i class="fa-solid fa-delete-left"></i>
                                 </button>
-                                <button class="buttonColor" onclick="appendToDisplay('%')">
+                                <button class="buttonColor" onclick="toAddOperator('%')">
                                     <i class="fa-solid fa-percent"></i>
                                 </button>
-                                <button  class="buttonColor" onclick="appendToDisplay('/')">
+                                <button  class="buttonColor" onclick="toAddOperator('/')">
                                     <i class="fa-solid fa-divide"></i>
                                 </button>
                                 <button onclick="appendToDisplay('7')">
@@ -47,7 +47,7 @@
                                 <button onclick="appendToDisplay('9')">
                                     <i class="fa-solid fa-9"></i>
                                 </button>
-                                <button class="buttonColor" onclick="appendToDisplay('*')">
+                                <button class="buttonColor" onclick="toAddOperator('*')">
                                     <i class="fa-solid fa-xmark"></i>
                                 </button>
                                 <button onclick="appendToDisplay('4')">
@@ -59,7 +59,7 @@
                                 <button onclick="appendToDisplay('6')">
                                     <i class="fa-solid fa-6"></i>
                                 </button>
-                                <button class="buttonColor" onclick="appendToDisplay('-')">
+                                <button class="buttonColor" onclick="toAddOperator('-')">
                                     <i class="fa-solid fa-minus"></i>
                                 </button>
                                 <button onclick="appendToDisplay('1')">
@@ -71,7 +71,7 @@
                                 <button onclick="appendToDisplay('3')">
                                     <i class="fa-solid fa-3"></i>
                                 </button>
-                                <button class="buttonColor" onclick="appendToDisplay('+')">
+                                <button class="buttonColor" onclick="toAddOperator('+')">
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                                 <button onclick="appendToDisplay('00')">

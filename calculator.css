@@ -16,7 +16,7 @@
 #display {
     background-color: #3e3e3e;
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
     font-size: 2.5rem;
     text-align: right;
     border: none;
@@ -27,7 +27,7 @@
     background-color: #3e3e3e;
     width: 100%;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: right;
     border: none;
     color: var(--lightColor);
@@ -58,7 +58,7 @@ button:hover {
 }
 
 button:active {
-    background-color: #ccc7c7;
+    background-color: #eae5e5;
 }
 
 .buttonColor {
@@ -75,6 +75,6 @@ button:active {
 }
 
 .buttonColor:active {
-    background-color: #f4688e;
+    background-color: #f685a3;
     color: var(--lightColor);
 }
